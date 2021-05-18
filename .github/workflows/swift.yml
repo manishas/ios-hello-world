@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: ListVersions
-      run: xcversion -list
+      run: xcversion list
     - uses: actions/checkout@v2      
     - name: checkEnv
       run: printenv
