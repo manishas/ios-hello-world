@@ -12,10 +12,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: ShowUser
-      run: echo $XCODE_INSTALL_USER
-    - name: ShowPassword
-      run: echo $XCODE_INSTALL_PASSWORD
+    - name: ListVersions
+      run: xcversion -list
     - uses: actions/checkout@v2      
     - name: checkEnv
       run: printenv
