@@ -12,11 +12,11 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
     - name: ShowUser
       run: echo $XCODE_INSTALL_USER
     - name: ShowPassword
       run: echo $XCODE_INSTALL_PASSWORD
+    - uses: actions/checkout@v2      
     - name: checkEnv
       run: printenv
     - name: checkDisk
