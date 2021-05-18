@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: ShowUser
+      run: echo $XCODE_INSTALL_USER
+    - name: ShowPassword
+      run: echo $XCODE_INSTALL_PASSWORD
     - name: checkEnv
       run: printenv
     - name: checkDisk
